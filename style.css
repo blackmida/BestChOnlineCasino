@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./img/backgrounds/backgroundDesktop.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(48, 46, 42, 0.8);
+    padding: 10px;
+}
+
+nav{
+    max-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 200px;
+}
+
+nav p{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* SECTION */
+.introSection{
+    margin: 10px 0;
+    color: #fff;
+}
+.introSection h1{
+    text-transform: uppercase;
+    font-size: 34px;
+}
+.introSpan{
+    color: #F8CD4F;
+    /* text-transform: uppercase; */
+}
+
+.updatedDateText{
+    font-size: 28px !important;
+    font-weight: normal !important;
+}
+.introSection ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.introSection li{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 35px;
+}
+.sectionImg{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.introSectionTerms{
+    text-align: right;
+    color: #fff;
+}
+.introSectionTerms a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7em;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.introSectionTerms > a:first-child{
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+.introSectionTerms a:hover{
+    text-decoration: underline;
+}
+
+
+/* Section with games */
+.row{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 100px;
+    grid-gap: 10px;
+    background-color: #fafafa;
+    padding: 10px 0;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.child{
+    margin: 0 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color:rgb(48,162,201); */
+    background: linear-gradient(0deg, rgba(19,125,161,1) 0%, rgba(53,189,236,1) 100%);
+    color: #fff;
+    border-radius: 0 0 7px 0;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.tableSection div{
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.tableSection img{
+    /* width: 200px; */
+    width: 200px;
+}
+
+
+/* CARD WELCOME BONUS */
+.bonus h4{
+    font-weight: normal;
+}
+.bonus h2:hover{
+    text-decoration: underline;
+}
+
+
+/* CARD FOR RATINGS */
+.rates h3{
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.rates i{
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.ordinalNo{
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+    font-weight: bold;
+}
+.row:hover{
+    background-color: #EFEFEF;
+}
+.row:hover > :first-child{
+    background-color: #F8CD4F;
+    color: #fff;
+}
+
+/* GRADES AND VOTES FOR MOBILE VESRSION */
+.mobileGradesVotes{
+    display: none;
+}
+
+
+/* CARD CALL ON ACTION WITH BUTTON AND LINKS */
+.callOnAction a{
+    color: black;
+    font-size: 0.9em;
+}
+.button{
+    display: inline-block;
+    color: #fff !important;
+    font-size: 1.1em !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 20px 0;
+    width: 200px;
+    background: linear-gradient(0deg, rgba(32,128,32,1) 0%, rgba(63,253,45,1) 100%);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover{
+    background: linear-gradient(0deg, rgba(248,205,79,1) 0%, rgba(232,178,18,1) 100%);
+}
+
+
+/* ABOUT SECTION WITH A BUNCH OF TEXT */
+.aboutSection{
+    color: #fff;
+    margin: 20px 0;
+}
+
+.aboutSection h1{
+    margin-bottom: 10px;
+}
+.aboutSection p{
+    margin-bottom: 20px;
+}
+.aboutSection ul{
+    margin-left: 20px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.leftFooter{
+    color: #fff;
+}
+.leftFooter img{
+    width: 100px;
+}
+
+.rightFooter img{
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background: none;
+        background-image: none;
+    }
+
+    .hero{
+        background-image: url(./img/backgrounds/backgroundMobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 10px 0;
+        /* width: 100%; */
+    }
+    .container{
+        width: 100%;
+        background-color: rgba(48, 46, 42, 0.8);
+        /* background-color: unset; */
+        padding: 0px 10px;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        margin: 0 auto;
+        width: 150px;
+    }
+    nav p{
+        display: none;
+    }
+
+    .introSection{
+        text-align: center;
+    }
+    .introSection h1{
+        font-size: 1.2em;
+    }
+    .updatedDateText{
+        font-size: 1em !important;
+        margin-top: 10px;
+    }
+    .introSection p{
+        display: none;
+    }
+    .introSection ul{
+        justify-content: center;
+        font-size: 0.8em;
+    }
+    .introSection li{
+        font-size: 0.8em;
+        margin: 0 5px;
+    }
+
+    .row{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 10px;
+        padding: 20px 5px;
+        background-color: #222428;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .row:hover{
+        background-color: #222428;
+    }
+
+    .ordinalNo{
+        display: none;
+    }
+
+    .gameLogo a{
+        display: inline-block;
+        /* width: 70%; */
+    }
+
+    .gameLogo img{
+        width: 150px;
+        margin-left: 0;
+    }
+
+    
+    .bonus h4{
+        font-size: 14px;
+    }
+    .bonus h2{
+        font-size: 18px;
+    }
+
+    .rates{
+        display: none;
+    }
+
+    /* OVDE JE BIO KOD */
+    .grade h1{
+        display: none;
+    }
+    .mobileGradesVotes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobileGradesVotes h4,
+    .mobileGradesVotes h2,
+    .mobileGradesVotes h3{
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+
+    .mobileGradesVotesLeft i{
+        color: yellow;
+        font-weight: bold;
+        /* font-size: 1.1em; */
+        padding-bottom: 15px;
+    }
+
+    .mobileGradesVotesRight h2{
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .box2{
+        grid-column-start: 1/2;
+        grid-row-start: 1/2;
+    }
+
+
+    .button{
+        width: 100%;
+        background: linear-gradient(0deg, rgba(19,125,161,1) 0%, rgba(53,189,236,1) 100%);
+        font-size: 0.8em !important;
+    }
+
+    .child{
+        background: linear-gradient(0deg, rgba(32,128,32,1) 0%, rgba(63,253,45,1) 100%);
+    }
+
+    .callOnAction a{
+        color: #fff;
+    }
+
+    .introSectionTerms{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1400px){
+      .container{
+          width: 60%;
+      }
+  }
